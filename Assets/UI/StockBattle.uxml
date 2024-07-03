@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Background" style="height: auto; flex-grow: 1;">
+        <ui:VisualElement name="Filler" style="flex-grow: 0.85;" />
+        <ui:VisualElement name="StockHolder" style="flex-grow: 0.15; flex-direction: row;">
+            <ui:VisualElement name="Player1Holder" style="flex-grow: 25; display: none;">
+                <ui:VisualElement name="StockHolder" style="flex-grow: 1; flex-direction: column-reverse; overflow: hidden; display: flex;">
+                    <ui:Label text="Stocks: 0" display-tooltip-when-elided="true" name="StocksText" style="font-size: 50%; -unity-text-align: upper-center; overflow: hidden; color: rgb(0, 0, 0);" />
+                    <ui:Label text="Player 1" display-tooltip-when-elided="true" name="PlayerName" style="font-size: 50%; -unity-text-align: upper-center; overflow: hidden; color: rgb(0, 0, 0);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Player2Holder" style="flex-grow: 25; display: none;">
+                <ui:VisualElement name="StockHolder" style="flex-grow: 1; flex-direction: column-reverse; overflow: hidden; display: flex;">
+                    <ui:Label text="Stocks: 0" display-tooltip-when-elided="true" name="StocksText" style="font-size: 50%; -unity-text-align: upper-center; overflow: hidden; color: rgb(0, 0, 0);" />
+                    <ui:Label text="Player 2" display-tooltip-when-elided="true" name="PlayerName" style="font-size: 50%; -unity-text-align: upper-center; overflow: hidden; color: rgb(0, 0, 0);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Player3Holder" style="flex-grow: 25; display: none;">
+                <ui:VisualElement name="StockHolder" style="flex-grow: 1; flex-direction: column-reverse; overflow: hidden;">
+                    <ui:Label text="Stocks: 0" display-tooltip-when-elided="true" name="StocksText" style="font-size: 50%; -unity-text-align: upper-center; overflow: hidden; color: rgb(0, 0, 0);" />
+                    <ui:Label text="Player 3" display-tooltip-when-elided="true" name="PlayerName" style="font-size: 50%; -unity-text-align: upper-center; overflow: hidden; color: rgb(0, 0, 0);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Player4Holder" style="flex-grow: 25; display: none;">
+                <ui:VisualElement name="StockHolder" style="flex-grow: 1; flex-direction: column-reverse; overflow: hidden;">
+                    <ui:Label text="Stocks: 0" display-tooltip-when-elided="true" name="StocksText" style="font-size: 50%; -unity-text-align: upper-center; overflow: hidden; color: rgb(0, 0, 0);" />
+                    <ui:Label text="Player 4" display-tooltip-when-elided="true" name="PlayerName" style="font-size: 50%; -unity-text-align: upper-center; overflow: hidden; color: rgb(0, 0, 0);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

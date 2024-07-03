@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="Sylesheets/PlayerSetupSheet.uss" />
+    <ui:VisualElement name="Background" focusable="false" style="flex-grow: 1; background-color: rgb(0, 0, 0);">
+        <ui:VisualElement name="Topbar" style="background-color: rgb(140, 140, 140); flex-grow: 0.025; align-items: center; justify-content: center; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+            <ui:Label text="Player Setup" display-tooltip-when-elided="true" name="SelectionScreenName" style="font-size: 75%; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Players" style="flex-grow: 1; flex-direction: row; align-items: stretch; justify-content: center;">
+            <ui:VisualElement name="Player1" style="flex-grow: 0; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); display: none; align-items: stretch; flex-wrap: nowrap; flex-basis: 25%; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
+                <ui:Label text="Player 1" display-tooltip-when-elided="true" name="PlayerText" class="PlayerNameText" style="font-size: 50%; color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="NameBorder" style="height: 0.5%; background-color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="PlayerColor" style="height: 3%; background-color: rgb(255, 255, 255); border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                <ui:VisualElement name="NameBorder" style="height: 0.5%; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="*Insert Player Information Here*" display-tooltip-when-elided="true" name="PlayerInformation" class="PlayerInformationText" style="font-size: 20%; color: rgb(255, 255, 255);" />
+                <ui:SliderInt picking-mode="Ignore" label="&lt;color=#ffffff&gt;Selected Weapon: " value="0" high-value="2" show-input-field="false" direction="Horizontal" inverted="false" page-size="0" tabindex="0" tooltip="0: Rifle. 1: Sniper" name="SelectedWeapon" style="color: rgba(255, 255, 255, 255); background-color: rgba(0, 0, 0, 255); font-size: 50%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Player2" style="flex-grow: 0; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); display: none; align-items: stretch; flex-wrap: nowrap; flex-basis: 25%; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
+                <ui:Label text="Player 2" display-tooltip-when-elided="true" name="PlayerText" class="PlayerNameText" style="font-size: 50%; color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="NameBorder" style="height: 0.5%; background-color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="PlayerColor" style="height: 3%; background-color: rgb(255, 255, 255); border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                <ui:VisualElement name="NameBorder" style="height: 0.5%; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="*Insert Player Information Here*" display-tooltip-when-elided="true" name="PlayerInformation" class="PlayerInformationText" style="font-size: 20%; color: rgb(255, 255, 255);" />
+                <ui:SliderInt picking-mode="Ignore" label="&lt;color=#ffffff&gt;Selected Weapon: " value="0" high-value="2" show-input-field="false" direction="Horizontal" inverted="false" page-size="0" tabindex="0" tooltip="0: Rifle. 1: Sniper" name="SelectedWeapon" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: 50%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Player3" style="flex-grow: 0; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); display: none; align-items: stretch; flex-wrap: nowrap; flex-basis: 25%; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
+                <ui:Label text="Player 3" display-tooltip-when-elided="true" name="PlayerText" class="PlayerNameText" style="font-size: 50%; color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="NameBorder" style="height: 0.5%; background-color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="PlayerColor" style="height: 3%; background-color: rgb(255, 255, 255); border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                <ui:VisualElement name="NameBorder" style="height: 0.5%; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="*Insert Player Information Here*" display-tooltip-when-elided="true" name="PlayerInformation" class="PlayerInformationText" style="font-size: 20%; color: rgb(255, 255, 255);" />
+                <ui:SliderInt picking-mode="Ignore" label="&lt;color=#ffffff&gt;Selected Weapon: " value="0" high-value="2" show-input-field="false" direction="Horizontal" inverted="false" page-size="0" tabindex="0" tooltip="0: Rifle. 1: Sniper" name="SelectedWeapon" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: 50%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Player4" style="flex-grow: 0; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); display: none; align-items: stretch; flex-wrap: nowrap; flex-basis: 25%; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
+                <ui:Label text="Player 4" display-tooltip-when-elided="true" name="PlayerText" class="PlayerNameText" style="font-size: 50%; color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="NameBorder" style="height: 0.5%; background-color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="PlayerColor" style="height: 3%; background-color: rgb(255, 255, 255); border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                <ui:VisualElement name="NameBorder" style="height: 0.5%; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="*Insert Player Information Here*" display-tooltip-when-elided="true" name="PlayerInformation" class="PlayerInformationText" style="font-size: 20%; color: rgb(255, 255, 255);" />
+                <ui:SliderInt picking-mode="Ignore" label="&lt;color=#ffffff&gt;Selected Weapon: " value="0" high-value="2" show-input-field="false" direction="Horizontal" inverted="false" page-size="0" tabindex="0" tooltip="0: Rifle. 1: Sniper" name="SelectedWeapon" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: 50%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomBar" style="background-color: rgb(140, 140, 140); flex-grow: 0.025; align-items: center; justify-content: center; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+            <ui:Button text="Start Game" display-tooltip-when-elided="true" name="StartButton" class="BasicButton" style="font-size: 50%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
